@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css//algo.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <script src="js//prim.js"></script>
+</head>
+<body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="header">
+
+    <h1 style="color: white"><b>Algorithms</b></h1>
+  <p style="color: white">Bubble Sort</p>
+</div>
+<div class="topnav" >
+     <div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+ <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
+      <a href='#'>Books</a>
+      <a href='Devs.html'>Developers</a>
+      <a id="feed">Feedback</a>
+
+</div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
+  <a href="front.html" >Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Primes
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="Primality.html">Introduction</a>
+      <a href="PrimeFact.html">Prime factors</a>
+      <a href="RSA.html">RSA Encryption</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Modulur Arithmatic
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="welcome.html">Introduction</a>
+      <a href="ModularAddMulSub.html">Modulur arithmatic</a>
+      <a href="congo.html">Modulur congruency</a>
+    </div>
+
+
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">Algorithms
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="bubble.html">Bubble Sort</a>
+
+    </div>
+
+
+   </div>
+</div>
+    <div class="w3-container" >
+        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button></div>
+     <!-- The Modal -->
+      <div id="myModal" class="modal" >
+
+     <!-- Modal content -->
+  <div class="modal-content">
+  <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
+    <span class="close">&times;</span>
+
+      <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
+  </div>
+    </div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2><span style="margin-left: 400px"><b>Bubble Sort</b></span></h2>
+      <h3 style="font-family: Raleway">Introduction To Bubble Sort</h3>
+        <p style="font-size: 18px">Bubble Sort is very Basic and <i>Inefficient</i> method for sorting .
+            Bubble use the method of Comparison for sorting.</p>
+        <p> In worst case total comparisons can go upto n<sup>2</sup> i.e. <i><b>O</b>(n<sup>2</sup>)</i>   where <b><i>n</i></b> is the size of input.</p>
+
+              <h2 style="font-family: Merriweather">Examples With Visualisation</h2>
+        <p style="font-size: 25px">Comaparisons</p><br>
+        <p>example dataset [3,2,5,4,6,1]</p>
+
+        <div style="margin-left: 80px"><img src="css\\img\\bubble.gif"></div>
+        <br>
+         <h2 style="font-family: Merriweather">Algorithm</h2>
+        <div id="code" style="margin-left: 250px; background-color: azure;width: 35%;">
+        <p style="font-family: 'Roboto Mono', monospace;">for i->0 to size-1<br>
+        &nbsp; for j->0 to size-1<br>
+             &nbsp;&nbsp; &nbsp;&nbsp;if a[j]>a[j+1]<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(a[j],a[j+1])<br>
+           &nbsp;&nbsp;&nbsp; &nbsp;else<br>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Continue
+            </p></div>
+
+
+
+
+            </div>
+
+    <div class="card">
+        <h2>Bubble Sort</h2>
+        <br>
+        <br>
+        <div style="margin-left: 250px"><form><input type="text" style="margin-left=40px"  id="elem"  onkeypress="return isNumber(event)" placeholder="Enter Data">
+        </form><br>
+            <p><button style="margin-left: 10px"class="button" onclick="pushArray()">Add Element</button>
+                <button style="margin-left: 50px"class="button" onclick="myFunction()">Bubble Sort</button>
+            <p id="ans" style="font-family: Anton;margin-left: 100px"><b></b></p>
+        </div>
+    </div>
+    </div>
+
+  <div class="sticky">
+    <div class="card" >
+      <h2 style="font-family: Merriweather">References</h2>
+      <div><a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css\\img\\mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a></div>
+      <p>MIT OpenCourseWare By Prof.Charles E. Leirson</p><p></p>
+        <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/"><button class="button" id="mit" ><span>Visit </span></button> </a>
+      </div>
+    </div></div><script type="text/javascript">
+
+
+var array = new Array();
+function pushArray(){
+array.push((document.getElementById("elem").value));
+    document.getElementById("elem").value = '';
+
+}
+
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+
+var count = 1
+function myFunction() {
+
+    document.getElementById('ans').innerHTML="Array you entered was "+ array;
+    var arrayLength = array.length;
+    var i;
+    var j;
+    var k;
+    for(i=0;i<arrayLength;i++)
+    {
+        for(j=i+1;j<arrayLength;j++)
+        { if(array[i]>array[j])
+          {
+                    k=array[i];
+                    array[i]=array[j];
+                    array[j]=k;
+
+          }
+    document.getElementById('ans').innerHTML=("<br/><br/>"+ count+"th iteration produced : " + array);
+    count = count + 1;
+
+        }
+
+
+    }
+    document.getElementById('ans').innerHTML="<br/><br/>Bubble Sorted " + array;
+}
+
+</script>
+   </body>
+</html>

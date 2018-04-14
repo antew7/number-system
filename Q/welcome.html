@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/new.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="header">
+
+    <h1 class="header h1" style="color: whitesmoke">Number theory</h1>
+  <p style="color: whitesmoke">Theory Of Numbers</p>
+</div>
+
+<div class="topnav" >
+     <div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+ <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
+      <a href='#'>Books</a>
+      <a href='Devs.html'>Developers</a>
+      <a id="feed">Feedback</a>
+
+</div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
+  <a href="front.html" >Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Primes
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="Primality.html">Introduction</a>
+      <a href="PrimeFact.html">Prime factors</a>
+      <a href="RSA.html">RSA Encryption</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Modulur Arithmatic
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="welcome.html">Introduction</a>
+      <a href="ModularAddMulSub.html">Modulur arithmatic</a>
+      <a href="congo.html">Modulur congruency</a>
+    </div>
+
+
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">Algorithms
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="bubble.html">Bubble Sort</a>
+
+    </div>
+
+
+   </div>
+</div>
+
+    <div class="w3-container" >
+        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button></div>
+         <!-- The Modal -->
+      <div id="myModal" class="modal" >
+
+     <!-- Modal content -->
+  <div class="modal-content">
+  <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
+    <span class="close">&times;</span>
+
+      <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
+  </div>
+
+
+    </div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2><span style="margin-left: 300px"><b>Modular Arithmetic</b></span></h2>
+      <h3 style="font-family: Raleway">An Introduction To Modular Math</h3>
+        <p>Whe we divide two integers we get <i>Equation</i> :</p><br>
+        <div style="margin-left: 200px"><p style="margin-left: 150px  "><b>A</b><br>
+            --  = <b>Q</b><span style="font-family: cursive"><i> remainder</i></span> <b>R</b><br>
+            <b>B</b></p><br></div>
+        <div style="margin-left: 200px"><p>Where :</p>
+        <p>A is <i>Divident</i><br>
+             B is <i>Divisor</i><br>
+             Q is <i>Quotient</i><br>
+            R is <i>Remainder</i><br></p><br></div>
+        <p> Sometimes, we are only interested in finding the <b><i>Remainder</i></b>.<br>
+            for these cases we use <b><i>modulo</i></b> operator (mod).<br>
+            using abouve <i>equation</i> we have :</p><br>
+          <p>  <span style="margin-left: 250px ;border-style: ridge"> A <b><i>mod</i></b> B = R </span></p><br>
+        <h2 style="font-family: Merriweather">Examples With Visualisation</h2>
+        <p style="font-family: Raleway; font-size: 20px">8 <b><i>mod</i></b> 4 = ?</p><br>
+
+        <p>With a modulus of 4 we make a clock with numbers 0,1,2,3.<br></p>
+        <p>We start at 0 and go through 8 numbers in a clockwise sequence 1 -> 2 -> 3 -> 0 -> 1 -> 2 -> 3 -> 0. <br></p>
+        <div style="margin-left: 250px"><img src="css//img//6985b5aad53b5290f3f0eb64bf9529428a0362cc.jpg" alt="Mod Clock"></div>
+        <p>So, the Modulus will be 0.</p>
+        <p style="font-family: Raleway ; font-size: 20px">7 <b><i>mod</i></b> 2 = ?</p><br>
+        <p>With a modulus of 2 we make a clock with numbers 0 and 1.<br></p>
+        <p> We start at 0 and go through 7 numbers in clockwise sequence 1 -> 0 -> 1 -> 0 -> 1 -> 0 -> 1.</p>
+        <div style="margin-left: 250px"><img src="css//img//cc504f5d837e4bf480bf2f0acc5496ca1cfebdcc.jpg" alt="ModClk"></div><br>
+        <p>So the Modulus will be 1.</p><br>
+        <p style="font-family: Raleway ; font-size: 20px">-5 <b><i>mod</i></b> 3 = ?</p><br>
+
+        <p>With a modulus of 3 we make a clock with numbers 0 , 1 and 2.<br></p>
+        <p> We start at 0 and go through 5 numbers in <b><i>counter</i></b>-clockwise sequence 2 -> 1 -> 0 -> 2 -> 1.</p>
+         <div style="margin-left: 250px"><img src="css//img//7182f3b5a4573a4846e1297388c97516550c3fba.jpg" alt="ModClk1"></div><br>
+        <p>So the Modulus will be 1.</p><br>
+        <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
+
+
+
+    </div>
+
+    <div class="card">
+        <h2>Mod Evaluator</h2>
+        <br>
+        <br>
+        <div style="margin-left: 250px"><form><input type="number" id="data1" placeholder="Divident..." required>
+        <input type="number" id="data2" placeholder="Divisor..." required></form><br>
+            <p><button style="margin-left: 50px"class="button" onclick="Mod()">Get Mod</button>
+            <p id="ans" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
+        </div>
+    </div>
+    </div>
+
+  <div class="sticky">
+    <div class="card">
+      <h2 style="font-family: Merriweather">References</h2>
+      <div><a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a></div>
+      <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
+        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><button class="button" id="mit" ><span>Visit </span></button> </a>
+      </div>
+    </div></div>
+        <script src="js/prim.js"></script> </body>
+</html>

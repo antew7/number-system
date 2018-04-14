@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/cony.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="header">
+
+    <h1 style="color: white"><b>Number theory</b></h1>
+  <p style="color: white">Theory Of Numbers</p>
+</div>
+
+
+<div class="topnav" >
+     <div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+ <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
+      <a href='#'>Books</a>
+      <a href='#'>Developers</a>
+      <a id="feed">Feedback</a>
+
+</div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
+  <a href="front.html" >Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Primes
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="Primality.html">Introduction</a>
+      <a href="PrimeFact.html">Prime factors</a>
+      <a href="RSA.html">RSA Encryption</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Modulur Arithmatic
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="welcome.html">Introduction</a>
+      <a href="ModularAddMulSub.html">Modulur arithmatic</a>
+      <a href="congo.html">Modulur congruency</a>
+    </div>
+
+
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">Algorithms
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="bubble.html">Bubble Sort</a>
+
+    </div>
+
+
+   </div>
+</div>
+
+    <div class="w3-container" >
+        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button></div>
+     <!-- The Modal -->
+      <div id="myModal" class="modal" >
+
+     <!-- Modal content -->
+  <div class="modal-content">
+  <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
+    <span class="close">&times;</span>
+
+      <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
+  </div>
+    </div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2><span style="margin-left: 300px"><b>Congruence Modulo</b></span></h2>
+      <h3 style="font-family: Raleway">Introduction To Congruence Modulo</h3>
+        <p style="font-size: 18px">You may see an expression like:<br><span style="margin-left: 350px"><b><i>A≡B(mod C)</i></b></span><br>This says that A is congruent to B <b><i>mod</i></b> C.<br></p>
+        <p> We will discuss the meaning of congruence modulo by performing a thought
+            <br>experiment with the regular modulo operator.</p><p>Let's imagine we were calculating mod 5 for all of the integers:</p>
+              <h2 style="font-family: Merriweather">Examples With Visualisation</h2>
+        <br><div style="margin-left: 65px"><img src='css//img///congo.png'></div>
+        <br>
+        <p style="font-size: 18px">Suppose we labelled 5 slices 0, 1, 2, 3, 4.</p>
+        <p>Then, for each of the integers, we put it into a slice that matched the value of the integer mod 5.
+            Think of these slices as buckets, which hold a set of numbers. For example, 26 would go in the slice labelled 1,</p>
+        <p>because <b><i>26</i> mod <i>5</i></b> = <b><i>1</i></b>
+Above is a figure that shows some integers that we would find in each of the slices. </p>
+        <p style="font-size: 18px"> It would be useful to have a way of expressing that numbers belonged in the <b>same slice.</b><br>(Notice 26 is in the same slice as 1, 6, 11, 16, 21 in above example)
+        <p>A common way of expressing that two values are in the same slice,
+        is to say they are in the same equivalence class.<br>
+            The way we express this mathematically for mod C is:<b> A≡B (mod C)</b></p>
+<p>The above expression is pronounced A is congruent to B modulo C.</p>
+        <p>Examining the expression closer:</p>
+<p><b>1.</b> ≡ is the symbol for congruence, which means the values A and B are in the same equivalence class.</p>
+        <p><b>2.</b> (mod C) right parenthesis tells us what operation we applied to A and B.</p>
+        <p><b>3.</b>when we have both of these, we call "≡" congruence modulo C.</p>
+        <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="card">
+        <h2>Congruency Tester</h2>
+        <br>
+        <br>
+        <div style="margin-left: 250px"><form><input type="number" id="data1" placeholder="A" required>
+        <input type="number" id="data2" placeholder="B" required>
+            <input type="number" id="data3" placeholder="C" required></form><br>
+            <p><button style="margin-left: 50px"class="button" onclick="congoMod()">Get Mod</button>
+            <p id="ans" style="font-family: Merriweather;margin-left: 60px"><b></b></p>
+        </div>
+    </div>
+    </div>
+
+  <div class="sticky">
+    <div class="card" >
+      <h2 style="font-family: Merriweather">References</h2>
+      <div><a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a></div>
+      <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
+        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><button class="button" id="mit" ><span>Visit </span></button> </a>
+      </div>
+    </div></div>
+    <script src="js//prim.js"></script> </body>
+</html>

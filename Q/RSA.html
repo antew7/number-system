@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/cony.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "15%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="header">
+
+    <h1 style="color: white"><b>Number theory</b></h1>
+  <p style="color: white">Theory Of Numbers</p>
+</div>
+
+
+<div class="topnav" >
+     <div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+ <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
+      <a href='#'>Books</a>
+      <a href='Devs.html'>Developers</a>
+      <a id="feed">Feedback</a>
+
+</div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
+  <a href="front.html" >Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Primes
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="Primality.html">Introduction</a>
+      <a href="PrimeFact.html">Prime factors</a>
+      <a href="RSA.html">RSA Encryption</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Modulur Arithmatic
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="welcome.html">Introduction</a>
+      <a href="ModularAddMulSub.html">Modulur arithmatic</a>
+      <a href="congo.html">Modulur congruency</a>
+    </div>
+
+
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">Algorithms
+    <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+       <a href="bubble.html">Bubble Sort</a>
+
+    </div>
+
+
+   </div>
+</div>
+
+    <div class="w3-container" >
+        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button></div>
+     <!-- The Modal -->
+      <div id="myModal" class="modal" >
+
+     <!-- Modal content -->
+  <div class="modal-content">
+  <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
+    <span class="close">&times;</span>
+
+      <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
+  </div>
+    </div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2><span style="margin-left: 300px"><b>RSA Encryption</b></span></h2>
+      <h3 style="font-family: Raleway"><b>Prequisites</b></h3>
+      <h2 style="font-family: Raleway">Modulo P</h2><b>
+        <p style="font-size: 18px">The Set:<br><span style="margin-left: 250px ;font-size:23px ;font-family: Raleway"><b><i>Z(p) = { 0 , 1 , 2 , 3 , 4 , . . . , p-1 }</i></b></span><br></p>
+        <p> Is called the set of integers modulo p (or mod p for short). It is a set that contains Integers from 0 up until p−1.
+            <br><b>Example: Z10={0,1,2,3,4,5,6,7,8,9}</b></p>
+              <h2 style="font-family: Raleway">Multiplicative Inverse And The Greatest Common Divisor</h2>
+        <br>
+        <br>
+        <p style="font-size: 18px">A multiplicative inverse for x is a number that when multiplied by x, will equal 1. The multiplicative inverse of x is written as x<sup>-1</sup> and is defined as so:</p>
+        <p style="margin-left: 350px"><b>x . x<sup>-1</sup> = 1</b></p>
+        <p><b>The greatest common divisor (gcd)</b> between two numbers is the largest integer that will divide both numbers. For example, gcd(4,10)=2.</p>
+        <p style="font-size: 20px"> The interesting thing is that if two numbers have a gcd of 1, then the smaller of the two numbers has a multiplicative inverse in the modulo of the larger number. <br>
+    </p><br>
+<p><b>Example</b>: Lets work in the set Z9, then 4 <b>∈</b> Z9 and <b>gcd(4 , 9) = 1</b>. Therefore 4 has a multiplicative inverse (written 4<sup>-1</sup>) in <b>mod </b>9, which is 7. And indeed, 4 . 7 = 28 = 1 <b>mod</b> 9. But not all numbers have inverses. For instance, 3 <b>∈</b> Z9 but 3<sup>-1</sup> does not exist! This is because <b>gcd(3 , 9)=3 ≠ 1.</b></p>
+          <h2 style="font-family: Raleway">Euler's Totient</h2>
+            <p style="font-size: 20px">Euler's Totient is the number of elements that have a multiplicative inverse in a set of modulo integers. The totient is denoted using the Greek symbol phi <b>ϕ</b>.the totient is just the count of the number of elements that have their gcd with the modulus equal to 1. This brings us to an important equation regarding the totient and prime numbers:</p><br>
+              <p style="margin-left: 350px"><b> p <b>∈</b> P  , <b>ϕ(p) = (p-1)</p><br>
+                <p><b>EXAMPLE :</b>  ϕ(7) = |{0 , 1 , . . . , 6 }| = 6</p><br>
+                <br>
+                  <h2 style="font-family: Raleway ; font-size:38px"><b>R S A</b></h2>
+                    <p style="font-size: 20px">With the above background, we have enough tools to describe RSA and show how it works. RSA is actually a set of two algorithms:<br>
+                    <ol  style="font-size: 20px;font-family: Raleway">
+                    <li> <b>Key Generation</b>: A key generation algorithm.</li>
+                    <li><b>RSA Function Evaluation</b>A function F : : that takes as input a point x and a key k and produces either an encrypted result or plaintext, depending on the input and the key.</li>
+                  </ol>
+                </p></b></b></b>
+                    <h2 style="font-family: Raleway ; font-size:38px">Key Generation</h2>
+                    <p style="font-size: 20px">The key generation algorithm is the most complex part of RSA. The aim of the key generation algorithm is to generate both the public and the private RSA keys. Sounds simple enough! Unfortunately, weak key generation makes RSA very vulnerable to attack. So it has to be done correctly. Here is what has to happen in order to generate secure RSA keys</p>
+  <ol  style="font-size: 20px;font-family: Raleway">
+    <li><b>Large Prime Number Generation:</b> Two large prime numbers <b>p</b> and <b>q</b> need to be generated. These numbers are very large: At least 512 digits, but 1024 digits is considered safe.</li>
+    <li><b>Modulus : </b> From the two large numbers, a modulus n is generated by multiplying <b>p</b> and <b>q</b>.</li>
+    <li><b>Totient : </b> The totient of n,<b>ϕ(n)</b> is calculated. <b> n = p * q</b></li>
+    <li><b> Public Key (e) : </b> A prime number is calculated from the range <b>[ 3, ϕ(n) )</b> that has a greatest common divisor of 1 with ϕ(n).</li>
+<li><b>Private Key (d): </b> Because the prime in step 4 has a gcd of 1 with ϕ(n), we are able to determine it's inverse with respect to <b>modϕ(n)</b>.</li></ol>
+<br><br>
+   <h2 style="font-family: Raleway ; font-size:38px">R S A Function Evaluation</h2>
+     <p style="font-size: 20px">This is the process of transforming a plaintext message into ciphertext, or vice-versa. The RSA function, for message m and key k is evaluated as follows:<br>
+       <span style="margin-left:350px ;font-size:20px"><b><i>F(m,k) = m<sup>k</sup> mod (n)</i></b></span></p>
+        <p style="font-size: 20px"><b>Encryption : </b> F(m,e) = m<sup>e</sup> mod n = <b>c</b> <b><i>(cipher)</i></b>  where m is the <b>message</b> , e is the <b>public key</b> and n is <b>modulus</b></p>
+    <p style="font-size: 20px"><b>Decryption :</b> F(c,d) = c<sup>d</sup> mod n = m the <b><i>message</i></b></p>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="card">
+         <h2 style="font-family: Raleway ; font-size:38px">R S A Keygen</h2>
+        <br>
+        <br>
+
+        <div style="margin-left: 250px"><form><input type="number" id="data1" placeholder="P" required>
+        <input type="number" id="data2" placeholder="Q" required>
+      <input type="number" id="pub" placeholder="Public Key" required>
+    <input type="number" id="pri" placeholder=" Private Key"></form><br>
+    <input type="number" id="n" placeholder="Modulus">
+    <input type="number" id="e" placeholder="Euler Totient">
+        <p><button style="margin-left: 50px"class="button" onclick="keygen()">Get Keys</button>
+        <p id="ans" style="font-family: Merriweather;margin-left: 60px"><b></b></p>
+            <input type="number" id="da" placeholder="Message" ><br>
+            <input type="number" id="pubk" placeholder="Public Key" ><br>
+            <input type="number" id="en" placeholder="Encoded Message"></form><br>
+            <p><button style="margin-left: 50px"class="button" onclick="ecode()">Encode</button>
+            <p id="ans" style="font-family: Merriweather;margin-left: 60px"><b></b></p>
+            <input type="number" id="dd" placeholder="Encoded Message" ><br>
+            <input type="number" id="pke" placeholder="Private Key" ><br>
+            <input type="number" id="dec" placeholder="Decoded Message"></form><br>
+            <p><button style="margin-left: 50px"class="button" onclick="dcode()">Decode</button></p>
+
+        </div>
+    </div>
+    </div>
+
+  <div class="sticky">
+    <div class="card" >
+      <h2 style="font-family: Merriweather">References</h2>
+      <div><a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a></div>
+      <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
+        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><button class="button" id="mit" ><span>Visit </span></button> </a>
+      </div>
+    </div></div>
+    <script src="js//rsa.js"></script> </body>
+</html>

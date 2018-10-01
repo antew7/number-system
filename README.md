@@ -1,7 +1,8 @@
-A website for number system comprising primes modular theory
+A website to visually aid those seeking a better understanding of number systems comprised of primes modular theory.
 # Functionality
 ### Primes
 1. _Introduction to primes_
+
 2. _Prime Factors_
 ### Modular
 1. _Introduction_

@@ -98,7 +98,6 @@ body {
 /* Style the top navigation bar */
 .topnav {
     width: 100%;
-    overflow: hidden;
     background-color: #070606;
     font-family: 'Raleway', arial;
      position: -webkit-sticky;
@@ -109,15 +108,10 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-    float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 
 }
 
@@ -130,8 +124,7 @@ body {
 
 /* The dropdown container */
 .dropdown {
-  float: left;
-  overflow: hidden;
+	display: inline-block;
 }
 
 /* Dropdown button */
@@ -153,9 +146,8 @@ body {
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
-  position: fixed;
-
+	display: none;
+	position: absolute;
   background-color: white;
   min-width: 166.5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

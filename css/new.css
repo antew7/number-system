@@ -70,59 +70,58 @@ body {
 }
 
 
-.header {
+header {
     padding: 30px;
-    color: white;
+    font-family: 'Merriweather';
     text-align: center;
-     background-image:url('img\\Abstract Orange Red Texture Desktop Wallpaper.jpg');
-     font-family: 'Merriweather';
-   /* background-color: #070606;*/
+    color: whitesmoke;
+    
+    background-image:url('img\\Abstract Orange Red Texture Desktop Wallpaper.jpg');
     background-attachment: fixed;
-
+    
 }
 
-.header h1 {
+header h1 {
     font-size: 50px;
-    font-family: 'Merriweather';
-
 }
-.header h2{
-    font-family: 'Merriweather';
+
+header p {
     font-size: 30px;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 /* Style the top navigation bar */
-.topnav {
+nav {
     width: 100%;
     overflow: hidden;
     background-color: #070606;
     font-family: 'Raleway', arial;
-     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
+#menu {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding-bottom: 8px;
 }
 
 /* Style the topnav links */
-.topnav a {
+nav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-     position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 /* Change color on hover */
-.topnav a:hover {
+nav a:hover {
     background-color:  rgb(128,0,42);
     color: white;
     font-family: "Raleway";
@@ -147,7 +146,7 @@ body {
 }
 
 /* Add a red background color to navbar links on hover*/
-.navbar a:hover, .dropdown:hover .dropbtn {
+.nav a:hover, .dropdown:hover .dropbtn {
   background-color: orangered;
 }
 
@@ -184,7 +183,7 @@ body {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.left-column {
     float: left;
     width: 75%;
 }
@@ -242,8 +241,14 @@ margin-right: 350px;
     border: 1px solid #888;
     border-radius: 10px;
     width: 50%;
-    height: 40%;
+    height: 42%;
+}
 
+.modal-content button {
+    height: 45px;
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
 }
 
 /* The Close Button */
@@ -262,11 +267,67 @@ margin-right: 350px;
 }
 /* Add a card effect for articles */
 .card {
-
-
     padding: 50px;
     margin-top: 20px;
     background-color:  rgba(255,255,255,0.4);
+}
+
+.card h2 {
+    margin-left: 300px;
+}
+
+.card h3 {
+    font-family: Raleway;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#mod-explain {
+    margin-left: 200px;
+}
+
+.bordered {
+    border-style: ridge;
+}
+
+.left-350 {
+    margin-left: 350px;
+}
+
+.left-250 {
+    margin-left: 250px;
+}
+
+.left-70 {
+    margin-left: 70px;
+}
+
+#unbold {
+    font-weight: normal;
+}
+
+#remainder {
+    font-family: cursive;
+}
+
+.merriweather {
+    font-family: Merriweather;
+}
+
+.raleway-20 {
+    font-family: Raleway;
+    font-size: 20px
+}
+
+#source {
+    padding-left: 800px;
+    font-size: 10px;
 }
 
 /* Clear floats after the columns */
@@ -286,7 +347,7 @@ margin-right: 350px;
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-    .leftcolumn, .rightcolumn, {
+    .left-column, .right-column, {
         width: 100%;
         padding: 0;
     }

@@ -4,19 +4,19 @@ A website to visually aid those seeking a better understanding of number systems
 1. _Introduction to Primes_
     In this section,you will get a quick introduction about the prime numbers along with the examples with visualisation.
 2. _Prime Factorisation_
-    In this section,you will get to know about the term Factorisation and prime Keys of a number.
+    In this section,you will get to know about the term Factorisation and prime keys of a number.
     
 ### Modular Arithmetic
 1. _Introduction_
-    A quick introduction about the Modular Arithematic.
+    A quick introduction about Modular Arithematic.
 2. _Modular Arithmetic Expressions_
    *We can do various operations like*
    *modular addition*
    *modular subtraction*
-   "and"
-   *modular multiplication,etc.*
+   and
+   *modular multiplication ,etc.*
 3. _Modular Congruency_
-    Here you will get to know about the Congruence Modulo.you will find a live Congruency Testor also.
+    Here you will get to know about the Congruence Modulo. You will find a live Congruency Testor also.
 ### Algorithms
      An algorithm is an unambiguous specification of how to solve a class of problems in a very efficient way.
     _Here you can learn  various algorithms.

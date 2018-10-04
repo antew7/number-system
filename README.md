@@ -14,7 +14,7 @@ A website to visually aid those seeking a better understanding of number systems
    *modular addition*
    *modular subtraction*
    "and"
-   *modular multiplication,etc.*
+   *modular multiplication, etc.*
 3. _Modular Congruency_
     Here you will get to know about the Congruence Modulo.you will find a live Congruency Testor also.
 ### Algorithms
@@ -23,5 +23,5 @@ A website to visually aid those seeking a better understanding of number systems
 1. _Bubble Sort
 
 #Books
-* In the sidebar navigation,there is a link "SHOP",clicking on that you can buy various important books related to Number system and can practice at your home also.*
+* In the sidebar navigation, there is a link "SHOP", clicking on that you can buy various important books related to Number system and can practice at your home too.*
 

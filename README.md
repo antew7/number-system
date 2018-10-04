@@ -1,15 +1,15 @@
 A website to visually aid those seeking a better understanding of number systems and various algorithms comprised of primes modular theory.
 # Functionality
 ### Primes
-1. _Introduction to primes_
+1. _Introduction to Primes_
     In this section,you will get a quick introduction about the prime numbers along with the examples with visualisation.
-2. _Prime Factors_
+2. _Prime Factorisation_
     In this section,you will get to know about the term Factorisation and prime Keys of a number.
     
-### Modular
+### Modular Arithmetic
 1. _Introduction_
     A quick introduction about the Modular Arithematic.
-2. _Modular Arithmatic_
+2. _Modular Arithmetic Expressions_
    *We can do various operations like*
    *modular addition*
    *modular subtraction*

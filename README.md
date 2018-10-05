@@ -20,7 +20,7 @@ A website to visually aid those seeking a better understanding of number systems
 ### Algorithms
      An algorithm is an unambiguous specification of how to solve a class of problems in a very efficient way.
      Here you can learn  various algorithms.
-1. _Bubble Sort
+1. _Bubble Sort_
 
 # Books
 * In the sidebar navigation,there is a link "SHOP",clicking on that you can buy various important books related to Number system and can practice at your home also.*

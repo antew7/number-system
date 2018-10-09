@@ -23,4 +23,4 @@ A website to visually aid those seeking a better understanding of number systems
 1. _Bubble Sort_
 
 # Books
-* In the sidebar navigation,there is a link "SHOP",clicking on that you can buy various important books related to Number system and can practice at your home also.*
+* In the sidebar navigation,there is a link "SHOP",clicking on that you can buy various important books related to Number system and can practice at your home also.

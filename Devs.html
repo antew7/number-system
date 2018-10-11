@@ -1,84 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <title>Developers</title>
-    <head>
- <link rel="stylesheet" href="css/Devs.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+<!-- the code in the original file for dropdown menu isn't working and it still doesn't work -->
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>
-<body id="body">
-<script>
-var w = document.getElementById("mySidenav");
-var c=document.getElementsByClassName("card");
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "15%";
-}
+    
+    <!-- TITLE AND CUSTOM CSS -->
+    <title> Developers </title>
+    <link rel="stylesheet" href="css/devs.css">
+</head>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+<body>
 
-}
-    var b=document.getElementById("dark");
-    var v=document.getElementById("body");
-    function ev(){
+    <!-- ENTER HEADER HERE -->
+    <div class="header">
+        <h1 style="color: white"><b>Developers</b></h1>
+        <p style="color: white">Hi Users</p>
+    </div>
 
-          document.body.style.backgroundColor = "#f3f3f3"; document.body.style.backgroundImage="url(css\\img\\test.jpg)";
-        document.body.style.color="black";
-    }
-    function bac(){
-        document.body.style.backgroundImage="url(css\\img\\black-abstract-wallpaper-hd-On-wallpaper-hd.jpg)";
-         document.body.style.color="white";
-    }
+    <div class="topnav">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+            <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
+            <a href='#'>Books</a>
+            <a href='Devs.html'>Developers</a>
+            <a href='#' id="feed">Feedback</a>
+        </div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Primes
+                <!--<i class="fa fa-caret-down"></i>-->
+            </button>
+            <div class="dropdown-content">
+                <a href="Primality.html">Introduction</a>
+                <a href="PrimeFact.html">Prime Factors</a>
+                <a href="RSA.html">RSA Encryption</a>
+            </div>
+        </div>
 
-</script>
-<div class="header">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Modular Arithmetic
+                <!--<i class="fa fa-caret-down"></i>-->
+            </button>
+            <div class="dropdown-content">
+                <a href="welcome.html">Introduction</a>
+                <a href="ModularAddMulSub.html">Modular Arithmetic</a>
+                <a href="congo.html">Modular Congruency</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Algorithms
+                <!--<i class="fa fa-caret-down"></i>-->
+            </button>
+            <div class="dropdown-content">
+                <a href="bubble.html">Bubble Sort</a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button>
+    </div>
 
-    <h1 style="color: white"><b>Developers</b></h1>
-  <p style="color: white">Hi Users</p>
-</div>
+    <!-- ENTER CONTENT HERE-->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <img src="css/img/me.jpg" style="width: 100px ; height: 100px ; border-radius: 50%">
+                <p><q>Making this website was a very knwoledgeful experience . I got to know so many new things about <i>Web Development</i> and the beauty of <i>CSS</i> </q></p>
+                <p style="margin-left: 600px"><b>-Abhyuday Tripathi</b></p>
 
-
-<div class="topnav" >
-  <div id="mySidenav" class="sidenav" >
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
-
-
-      <a href="https://www.amazon.com/s/ref=nb_sb_noss_2/144-7551219-7280505?url=search-alias%3Daps&field-keywords=number+theory">Shop</a>
-      <a href='#'>Books </a>
-      <a href='Devs.html'>Developers</a>
-      <a href='#'>Feedback</a>
-      <a><br></a>
-
-
-
-</div><a style="font-size:20px;cursor:pointer ;color:white ; padding-bottom: 8px" onclick="openNav()">&#9776;</a>
-    <a href="index.html" >Home</a>
-  <a href="#">Primes</a>
-  <a href="#">Modular Arithmetic</a>
-  <a href="#">Algorithms</a>
-
-</div>
-
-    <div class="w3-container" >
-        <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button></div>
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-        <img src="css\\img\\me.jpg" style="width: 100px ; height: 100px ; border-radius: 50%">      <p><q>Making this website was a very knwoledgeful experience . I came to know so many new things about <i>Web Development</i> and the beauty of <i>CSS</i> </q></p>
-        <p style="margin-left: 600px"><b>-Abhyuday Tripathi</b></p>
-
-        <img src="css\\img\\ananya.jpg" style="width: 100px ; height: 100px ; border-radius: 50%"><p><q>While working on this project I got to know some basics of javascript and html ,css.We tried our best to make this webpage to its present form.</q></p>
-         <p style="margin-left: 600px"><b>-Ananya Tewari</b></p>
-
+                <img src="css/img/ananya.jpg" style="width: 100px ; height: 100px ; border-radius: 50%">
+                <p><q>While working on this project I got to know some basics of HTML, CSS and Javascript. We tried our best to get this webpage to its present form.</q></p>
+                <p style="margin-left: 600px"><b>-Ananya Tewari</b></p>
 
             </div>
-      </div>
- </div>
-   </body>
+        </div>
+    </div>
+
+    <!-- CUSTOM JS GOES HERE -->
+    <script src="js/prim.js"></script>
+    <script type="text/javascript">
+      var w = document.getElementById("mySidenav");
+        var c = document.getElementsByClassName("card");
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "15%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+        }
+        var b = document.getElementById("dark");
+        var v = document.getElementById("body");
+
+        function ev() {
+            document.body.style.backgroundColor = "#f3f3f3";
+            document.body.style.backgroundImage = "url(css/img/test.jpg)";
+            document.body.style.color = "black";
+        }
+
+        function bac() {
+            document.body.style.backgroundImage = "url(css/img/black-abstract-wallpaper-hd-On-wallpaper-hd.jpg)";
+            document.body.style.color = "white";
+        }
+    </script>
+</body>
 </html>

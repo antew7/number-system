@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
     <!-- TITLE AND CUSTOM CSS -->
     <title> Bubble Sort </title>
     <link rel="stylesheet" href="css/algo.css">
@@ -51,7 +50,6 @@
                 <a href="RSA.html">RSA Encryption</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">
                 Modular Arithmetic
@@ -76,17 +74,13 @@
     <div class="w3-container">
         <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button>
     </div>
-
     <!-- CONTENT -->
-
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
             <span class="close">&times;</span>
-
             <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
         </div>
     </div>
@@ -97,65 +91,59 @@
                 <h3 style="font-family: Raleway">Introduction To Bubble Sort</h3>
                 <p style="font-size: 18px">Bubble Sort is an extremely basic and <i>inefficient</i> method for sorting . Bubble Sort uses the method of Comparison for sorting.</p>
                 <p> In the worst case, total comparisons can go upto n<sup>2</sup> i.e. <i><b>O</b>(n<sup>2</sup>)</i> where <b><i>n</i></b> is the size of input.</p>
-
                 <h2 style="font-family: Merriweather">Examples With Visualisation</h2>
                 <p style="font-size: 25px">Comparisons</p>
                 <br>
                 <p>example dataset [3,2,5,4,6,1]</p>
-
                 <div style="margin-left: 80px"><img src="css\\img\\bubble.gif"></div>
-                <br>
-                <h2 style="font-family: Merriweather">Algorithm</h2>
-                <div id="code" style="margin-left: 250px; background-color: azure;width: 35%;">
-                    <p style="font-family: 'Roboto Mono', monospace;">for i->0 to size-1
-                        <br> &nbsp; for j->0 to size-1
-                        <br> &nbsp;&nbsp; &nbsp;&nbsp;if a[j]>a[j+1]
-                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(a[j],a[j+1])
-                        <br> &nbsp;&nbsp;&nbsp; &nbsp;else
-                        <br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Continue
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h2>Bubble Sort</h2>
-                <br>
-                <br>
-                <div style="margin-left: 250px">
-                    <form>
-                        <input type="text" style="margin-left=40px" id="elem" onkeypress="return isNumber(event)" placeholder="Enter Data">
-                    </form>
                     <br>
-                    <p>
-                        <button style="margin-left: 10px" class="button" onclick="pushArray()">Add Element</button>
-                        <button style="margin-left: 50px" class="button" onclick="myFunction()">Bubble Sort</button>
-                        <p id="ans" style="font-family: Anton;margin-left: 100px"><b></b></p>
-                    </p>
+                    <h2 style="font-family: Merriweather">Algorithm</h2>
+                    <div id="code" style="margin-left: 250px; background-color: azure;width: 35%;">
+                        <p style="font-family: 'Roboto Mono', monospace;">for i->0 to size-1
+                            <br> &nbsp; for j->0 to size-1
+                            <br> &nbsp;&nbsp; &nbsp;&nbsp;if a[j]>a[j+1]
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap(a[j],a[j+1])
+                            <br> &nbsp;&nbsp;&nbsp; &nbsp;else
+                            <br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Continue
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Bubble Sort</h2>
+                    <br>
+                    <br>
+                    <div style="margin-left: 250px">
+                        <form>
+                            <input type="text" style="margin-left=40px" id="elem" onkeypress="return isNumber(event)" placeholder="Enter Data">
+                        </form>
+                        <br>
+                        <p>
+                            <button style="margin-left: 10px" class="button" onclick="pushArray()">Add Element</button>
+                            <button style="margin-left: 50px" class="button" onclick="myFunction()">Bubble Sort</button>
+                            <p id="ans" style="font-family: Anton;margin-left: 100px"><b></b></p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="sticky">
-            <div class="card">
-                <h2 style="font-family: Merriweather">References</h2>
-                <div>
-                    <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css\\img\\mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
-                </div>
-                <p>MIT OpenCourseWare By Prof.Charles E. Leirson</p>
-                <p></p>
-                <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/">
+            <div class="sticky">
+                <div class="card">
+                    <h2 style="font-family: Merriweather">References</h2>
+                    <div>
+                        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css\\img\\mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
+                    </div>
+                    <p>MIT OpenCourseWare By Prof.Charles E. Leirson</p>
+                    <p></p>
+                    <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/">
                     <button class="button" id="mit"><span>Visit </span></button>
                 </a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- END OF CONTENT -->
-
-    <!-- CUSTOM JS -->
-    <script src="js/prim.js"></script>
-    <script type="text/javascript">
-      var array = new Array();
+        <!-- END OF CONTENT -->
+        <!-- CUSTOM JS -->
+        <script src="js/prim.js"></script>
+        <script type="text/javascript">
+        var array = new Array();
 
         function pushArray() {
             array.push((document.getElementById("elem").value));
@@ -196,7 +184,8 @@
 
             }
             document.getElementById('ans').innerHTML = "<br/><br/>Bubble Sorted " + array;
-        }      
-    </script>
+        }
+        </script>
 </body>
+
 </html>

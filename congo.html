@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
     <!-- TITLE AND CUSTOM CSS -->
     <title> Congruency Modulo</title>
     <link rel="stylesheet" href="css/cony.css">
@@ -51,7 +50,6 @@
                 <a href="RSA.html">RSA Encryption</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">
                 Modular Arithmetic
@@ -76,15 +74,12 @@
     <div class="w3-container">
         <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button>
     </div>
-
     <!-- CONTENT -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
             <span class="close">&times;</span>
-
             <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
         </div>
     </div>
@@ -103,57 +98,54 @@
                 <h2 style="font-family: Merriweather">Examples With Visualisation</h2>
                 <br>
                 <div style="margin-left: 65px"><img src='css//img///congo.png'></div>
-                <br>
-                <p style="font-size: 18px">Suppose we labelled 5 slices 0, 1, 2, 3, 4.</p>
-                <p>Then, for each of the integers, we put it into a slice that matched the value of the integer mod 5. Think of these slices as buckets, which hold a set of numbers. For example, 26 would go in the slice labelled 1,</p>
-                <p>because <b><i>26</i> mod <i>5</i></b> = <b><i>1</i></b> Above is a figure that shows some integers that we would find in each of the slices. </p>
-                <p style="font-size: 18px"> It would be useful to have a way of expressing that numbers belonged in the <b>same slice.</b>
-                    <br>(Notice 26 is in the same slice as 1, 6, 11, 16, 21 in above example)
-                    <p>A common way of expressing that two values are in the same slice, is to say they are in the same equivalence class.
-                        <br> The way we express this mathematically for mod C is:<b> A&#8801;B (mod C)</b></p>
-                    <p>In plain English, the above statement says "A is congruent to B modulo C."</p>
-                    <p>Examining the expression closer:</p>
-                    <p><b>1.</b> &#8801; is the symbol for congruence, which means the values A and B are in the same equivalence class.</p>
-                    <p><b>2.</b> The (mod C) within the parenthesis tells us what operation we applied to A and B.</p>
-                    <p><b>3.</b> When we have both of these, we call "&#8801;" congruence modulo C.</p>
-                    <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
-
-            </div>
-
-            <div class="card">
-                <h2>Congruency Tester</h2>
-                <br>
-                <br>
-                <div style="margin-left: 250px">
-                    <form>
-                        <input type="number" id="data1" placeholder="A" required>
-                        <input type="number" id="data2" placeholder="B" required>
-                        <input type="number" id="data3" placeholder="C" required>
-                    </form>
                     <br>
-                    <p>
-                        <button style="margin-left: 50px" class="button" onclick="congoMod()">Get Mod</button>
-                        <p id="ans" style="font-family: Merriweather;margin-left: 60px"><b></b></p>
+                    <p style="font-size: 18px">Suppose we labelled 5 slices 0, 1, 2, 3, 4.</p>
+                    <p>Then, for each of the integers, we put it into a slice that matched the value of the integer mod 5. Think of these slices as buckets, which hold a set of numbers. For example, 26 would go in the slice labelled 1,</p>
+                    <p>because <b><i>26</i> mod <i>5</i></b> = <b><i>1</i></b> Above is a figure that shows some integers that we would find in each of the slices. </p>
+                    <p style="font-size: 18px"> It would be useful to have a way of expressing that numbers belonged in the <b>same slice.</b>
+                        <br>(Notice 26 is in the same slice as 1, 6, 11, 16, 21 in above example)
+                        <p>A common way of expressing that two values are in the same slice, is to say they are in the same equivalence class.
+                            <br> The way we express this mathematically for mod C is:<b> A&#8801;B (mod C)</b></p>
+                        <p>In plain English, the above statement says "A is congruent to B modulo C."</p>
+                        <p>Examining the expression closer:</p>
+                        <p><b>1.</b> &#8801; is the symbol for congruence, which means the values A and B are in the same equivalence class.</p>
+                        <p><b>2.</b> The (mod C) within the parenthesis tells us what operation we applied to A and B.</p>
+                        <p><b>3.</b> When we have both of these, we call "&#8801;" congruence modulo C.</p>
+                        <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
+                </div>
+                <div class="card">
+                    <h2>Congruency Tester</h2>
+                    <br>
+                    <br>
+                    <div style="margin-left: 250px">
+                        <form>
+                            <input type="number" id="data1" placeholder="A" required>
+                            <input type="number" id="data2" placeholder="B" required>
+                            <input type="number" id="data3" placeholder="C" required>
+                        </form>
+                        <br>
+                        <p>
+                            <button style="margin-left: 50px" class="button" onclick="congoMod()">Get Mod</button>
+                            <p id="ans" style="font-family: Merriweather;margin-left: 60px"><b></b></p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="sticky">
-            <div class="card">
-                <h2 style="font-family: Merriweather">References</h2>
-                <div>
-                    <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
-                </div>
-                <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
-                <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/">
+            <div class="sticky">
+                <div class="card">
+                    <h2 style="font-family: Merriweather">References</h2>
+                    <div>
+                        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
+                    </div>
+                    <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
+                    <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/">
                     <button class="button" id="mit"><span>Visit </span></button>
                 </a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- END OF CONTENT -->
-
-    <!-- CUSTOM JS -->
-    <script src="js/prim.js"></script>
+        <!-- END OF CONTENT -->
+        <!-- CUSTOM JS -->
+        <script src="js/prim.js"></script>
 </body>
+
 </html>

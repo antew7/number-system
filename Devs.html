@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <!-- the code in the original file for dropdown menu isn't working and it still doesn't work -->
 
 <head>
@@ -13,20 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
     <!-- TITLE AND CUSTOM CSS -->
     <title> Developers </title>
     <link rel="stylesheet" href="css/devs.css">
 </head>
 
 <body>
-
     <!-- ENTER HEADER HERE -->
     <div class="header">
         <h1 style="color: white"><b>Developers</b></h1>
         <p style="color: white">Hi Users</p>
     </div>
-
     <div class="topnav">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
@@ -47,7 +43,6 @@
                 <a href="RSA.html">RSA Encryption</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">
                 Modular Arithmetic
@@ -72,7 +67,6 @@
     <div class="w3-container">
         <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button>
     </div>
-
     <!-- ENTER CONTENT HERE-->
     <div class="row">
         <div class="leftcolumn">
@@ -80,42 +74,40 @@
                 <img src="css/img/me.jpg" style="width: 100px ; height: 100px ; border-radius: 50%">
                 <p><q>Making this website was a very knwoledgeful experience . I got to know so many new things about <i>Web Development</i> and the beauty of <i>CSS</i> </q></p>
                 <p style="margin-left: 600px"><b>-Abhyuday Tripathi</b></p>
-
                 <img src="css/img/ananya.jpg" style="width: 100px ; height: 100px ; border-radius: 50%">
                 <p><q>While working on this project I got to know some basics of HTML, CSS and Javascript. We tried our best to get this webpage to its present form.</q></p>
                 <p style="margin-left: 600px"><b>-Ananya Tewari</b></p>
-
             </div>
         </div>
     </div>
-
     <!-- CUSTOM JS GOES HERE -->
     <script src="js/prim.js"></script>
     <script type="text/javascript">
-      var w = document.getElementById("mySidenav");
-        var c = document.getElementsByClassName("card");
+    var w = document.getElementById("mySidenav");
+    var c = document.getElementsByClassName("card");
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "15%";
-        }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "15%";
+    }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
 
-        }
-        var b = document.getElementById("dark");
-        var v = document.getElementById("body");
+    }
+    var b = document.getElementById("dark");
+    var v = document.getElementById("body");
 
-        function ev() {
-            document.body.style.backgroundColor = "#f3f3f3";
-            document.body.style.backgroundImage = "url(css/img/test.jpg)";
-            document.body.style.color = "black";
-        }
+    function ev() {
+        document.body.style.backgroundColor = "#f3f3f3";
+        document.body.style.backgroundImage = "url(css/img/test.jpg)";
+        document.body.style.color = "black";
+    }
 
-        function bac() {
-            document.body.style.backgroundImage = "url(css/img/black-abstract-wallpaper-hd-On-wallpaper-hd.jpg)";
-            document.body.style.color = "white";
-        }
+    function bac() {
+        document.body.style.backgroundImage = "url(css/img/black-abstract-wallpaper-hd-On-wallpaper-hd.jpg)";
+        document.body.style.color = "white";
+    }
     </script>
 </body>
+
 </html>

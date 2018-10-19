@@ -1,9 +1,9 @@
-function bubble_sort(param){
-var i;
-var j;
-	for(i=0;i<param.length;i++){
-		console.log(param[i]);
-	}
+function bubble_sort(param) {
+    var i;
+    var j;
+    for (i = 0; i < param.length; i++) {
+        console.log(param[i]);
+    }
 }
 
 var feed = document.getElementById('feed');
@@ -33,7 +33,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-    }
-function submit(){
+}
+
+function submit() {
     modal.style.display = "none";
 }

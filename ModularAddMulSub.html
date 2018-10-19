@@ -11,20 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
     <!-- TITLE AND CUSTOM CSS -->
     <title> Modular Arithmetic </title>
     <link rel="stylesheet" href="css/ma.css">
 </head>
 
 <body>
-    
     <!-- ENTER HEADER HERE -->
     <div class="header">
         <h1 style="color: whitesmoke">Number theory</h1>
         <p style="color: whitesmoke">Theory Of Numbers</p>
     </div>
-
     <div class="topnav">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
@@ -45,7 +42,6 @@
                 <a href="RSA.html">RSA Encryption</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbtn">
                 Modular Arithmetic
@@ -70,15 +66,12 @@
     <div class="w3-container">
         <button class="w3-button w3-xlarge w3-circle w3-red w3-card-4" id="myBtn">+</button>
     </div>
-
     <!-- ENTER CONTENT HERE-->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
         <div class="modal-content">
             <textarea rows="6" cols="50" placeholder="Give your reviews..." style="color:black"></textarea>
             <span class="close">&times;</span>
-
             <button class="button" type="button" onclick="submit()" style="height:45px;width:200px ;padding:10px;font-size: 18px"><span>Submit</span></button>
         </div>
     </div>
@@ -104,92 +97,87 @@
                     <br> LHS = RHS = 1
                     <br>
                 </p>
-
                 <p>Visualisation of Modular addition:
                     <br>
                 </p>
                 <div style="margin-left: 250px"><img src="css//img//3a2cb32acda2b6b63f88c61b8def97c0c1185767.jpg" alt="Mod Clock"></div>
-                <h3 style="font-family: Raleway"><b><i>Subtacting Modular Expressions</i></b></h3>
-                <p>The same concept is used while subtracting the modular expressions.
+                    <h3 style="font-family: Raleway"><b><i>Subtacting Modular Expressions</i></b></h3>
+                    <p>The same concept is used while subtracting the modular expressions.
+                        <br>
+                    </p>
+                    <h4 style="font-family: Merriweather">(A - B) mod C = (A mod C - B mod C) mod C</h4>
+                    <h3 style="font-family: Raleway"><b><i>Multiplying Modular Expressions</i></b></h3>
+                    <p>The same concept is used while multiplying the modular expressions.
+                        <br>
+                    </p>
+                    <h4 style="font-family: Merriweather">(A * B) mod C = (A mod C * B mod C) mod C</h4>
+                    <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
+                </div>
+                <div class="card">
+                    <h2>Mod Addition</h2>
                     <br>
-                </p>
-                <h4 style="font-family: Merriweather">(A - B) mod C = (A mod C - B mod C) mod C</h4>
-                <h3 style="font-family: Raleway"><b><i>Multiplying Modular Expressions</i></b></h3>
-                <p>The same concept is used while multiplying the modular expressions.
                     <br>
-                </p>
-                <h4 style="font-family: Merriweather">(A * B) mod C = (A mod C * B mod C) mod C</h4>
-                <p style="padding-left: 800px;font-size: 10px"><i>Source : KhanAcademy.com</i></p>
-
-            </div>
-
-            <div class="card">
-                <h2>Mod Addition</h2>
-                <br>
-                <br>
-                <div style="margin-left: 250px">
-                    <form>
-                        <input type="number" id="val1" placeholder="Enter A" required>
-                        <input type="number" id="val2" placeholder="Enter B" required>
-                        <input type="number" id="val3" placeholder="Enter C" required>
-                    </form>
+                    <div style="margin-left: 250px">
+                        <form>
+                            <input type="number" id="val1" placeholder="Enter A" required>
+                            <input type="number" id="val2" placeholder="Enter B" required>
+                            <input type="number" id="val3" placeholder="Enter C" required>
+                        </form>
+                        <br>
+                        <p>
+                            <button style="margin-left: 50px" class="button" onclick="Mod_add()">Get Mod</button>
+                            <p id="answ" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Mod Subtraction</h2>
                     <br>
-                    <p>
-                        <button style="margin-left: 50px" class="button" onclick="Mod_add()">Get Mod</button>
-                        <p id="answ" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
+                    <br>
+                    <div style="margin-left: 250px">
+                        <form>
+                            <input type="number" id="sub1" placeholder="Enter A" required>
+                            <input type="number" id="sub2" placeholder="Enter B" required>
+                            <input type="number" id="sub3" placeholder="Enter C" required>
+                        </form>
+                        <br>
+                        <p>
+                            <button style="margin-left: 50px" class="button" onclick="Mod_sub()">Get Mod</button>
+                            <p id="an" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Mod Multiplication</h2>
+                    <br>
+                    <br>
+                    <div style="margin-left: 250px">
+                        <form>
+                            <input type="number" id="mul1" placeholder="Enter A" required>
+                            <input type="number" id="mul2" placeholder="Enter B" required>
+                            <input type="number" id="mul3" placeholder="Enter C" required>
+                        </form>
+                        <br>
+                        <p>
+                            <button style="margin-left: 50px" class="button" onclick="Mod_multi()">Get Mod</button>
+                            <p id="answer" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <h2>Mod Subtraction</h2>
-                <br>
-                <br>
-                <div style="margin-left: 250px">
-                    <form>
-                        <input type="number" id="sub1" placeholder="Enter A" required>
-                        <input type="number" id="sub2" placeholder="Enter B" required>
-                        <input type="number" id="sub3" placeholder="Enter C" required>
-                    </form>
-                    <br>
-                    <p>
-                        <button style="margin-left: 50px" class="button" onclick="Mod_sub()">Get Mod</button>
-                        <p id="an" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
-                </div>
-            </div>
-            <div class="card">
-                <h2>Mod Multiplication</h2>
-                <br>
-                <br>
-                <div style="margin-left: 250px">
-                    <form>
-                        <input type="number" id="mul1" placeholder="Enter A" required>
-                        <input type="number" id="mul2" placeholder="Enter B" required>
-                        <input type="number" id="mul3" placeholder="Enter C" required>
-                    </form>
-                    <br>
-                    <p>
-                        <button style="margin-left: 50px" class="button" onclick="Mod_multi()">Get Mod</button>
-                        <p id="answer" style="font-family: Merriweather;margin-left: 100px"><b></b></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="sticky">
-            <div class="card">
-                <h2 style="font-family: Merriweather">References</h2>
-                <div>
-                    <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
-                </div>
-                <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
-                <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/">
+            <div class="sticky">
+                <div class="card">
+                    <h2 style="font-family: Merriweather">References</h2>
+                    <div>
+                        <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/"><img src="css//img//mitocw_1024x768.jpg" alt="mitocw" style="height: 200px ; width: 200px"></a>
+                    </div>
+                    <p>MIT OpenCourseWare By Prof.Andrew Sutherland</p>
+                    <a href="https://ocw.mit.edu/courses/mathematics/18-785-number-theory-i-fall-2016/">
                     <button class="button" id="mit"><span>Visit </span></button>
                 </a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- CUSTOM JS GOES HERE -->
-    <script src="js/prim.js"></script>
-    <script type="text/javascript">
+        <!-- CUSTOM JS GOES HERE -->
+        <script src="js/prim.js"></script>
+        <script type="text/javascript">
         function openNav() {
             document.getElementById("mySidenav").style.width = "15%";
         }
@@ -197,6 +185,7 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-    </script>
+        </script>
 </body>
+
 </html>
